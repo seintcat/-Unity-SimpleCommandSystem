@@ -1,0 +1,31 @@
+<mxfile host="Electron" modified="2023-08-31T14:21:53.438Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="4tiIXEhnxQv2dOJ77ZRv" version="21.6.8" type="device">
+  <diagram name="페이지-1" id="EXoF-xyNsVU1TsGXg5mc">
+    <mxGraphModel dx="819" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5000" pageHeight="5000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="01gb4bQ7cW5seoOzMavE-1" value="CommandCore :&amp;nbsp;ScriptableObject" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="01gb4bQ7cW5seoOzMavE-2" value="public char delimiter&lt;br&gt;구분자&lt;br&gt;&lt;br&gt;private&amp;nbsp;string defaultStr&lt;br&gt;어떠한 명령어도 없이 값이 들어올 때 사용&lt;br&gt;에러 검출용 &amp;gt; 직접 사용할 일 없음&lt;br&gt;&lt;br&gt;private List&amp;lt;string&amp;gt; commands&lt;br&gt;명령어&lt;br&gt;&lt;br&gt;&lt;br&gt;사용예시&lt;br&gt;(구분자)명령어(구분자)값" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="01gb4bQ7cW5seoOzMavE-1">
+          <mxGeometry y="50" width="260" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="01gb4bQ7cW5seoOzMavE-3" value="코드 사용" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="440" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="01gb4bQ7cW5seoOzMavE-4" value="&lt;div&gt;CommandCore.Decode(CommandCore 인스턴스, string 문자열)&lt;/div&gt;&lt;div&gt;문자열을 CommandData 리스트로 반환&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="01gb4bQ7cW5seoOzMavE-3">
+          <mxGeometry y="26" width="440" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="01gb4bQ7cW5seoOzMavE-5" value="&lt;div&gt;CommandCore.Encode(CommandCore 인스턴스, List&amp;lt;CommandData&amp;gt; 리스트)&lt;/div&gt;&lt;div&gt;CommandData 리스트를 문자열로 반환&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="01gb4bQ7cW5seoOzMavE-3">
+          <mxGeometry y="70" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="01gb4bQ7cW5seoOzMavE-7" value="CommandData(한 개의 명령어-데이터 묶음)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="160" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="01gb4bQ7cW5seoOzMavE-8" value="public string text&lt;br&gt;값&lt;br&gt;&lt;br&gt;public int command&lt;br&gt;명령어 인덱스" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="01gb4bQ7cW5seoOzMavE-7">
+          <mxGeometry y="50" width="330" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
