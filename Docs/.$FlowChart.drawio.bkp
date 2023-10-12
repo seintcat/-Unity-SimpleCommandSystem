@@ -1,11 +1,87 @@
-<mxfile host="Electron" modified="2023-10-06T12:57:32.886Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="0wIxSbjzJC3b-vZZMbD3" version="22.0.2" type="device">
+<mxfile host="Electron" modified="2023-10-06T13:40:38.894Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="EaMxiQmMdrUPHCr7tzzb" version="22.0.2" type="device">
   <diagram name="페이지-1" id="fb7TPT-cGsN8IhFg-64O">
-    <mxGraphModel dx="819" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5000" pageHeight="5000" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5000" pageHeight="5000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GVEklmTAcbrlkiGCALrd-1" value="GetCommand(int index)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="60" y="40" width="150" height="60" as="geometry" />
+        <mxCell id="GVEklmTAcbrlkiGCALrd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-1" target="GVEklmTAcbrlkiGCALrd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-1" value="CommandCore.GetCommand(int index)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="48" y="40" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-2" value="구분자로 묶는다" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="117.5" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-4" target="GVEklmTAcbrlkiGCALrd-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-4" target="GVEklmTAcbrlkiGCALrd-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="167.28571428571422" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-4" value="명령이 주어지지 않았는지 확인" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="255" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-2" target="GVEklmTAcbrlkiGCALrd-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-8" value="올바른 명령인지 확인" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" y="240" width="255" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-9" value="명령없음 반환" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="118" y="370" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-12" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="250" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-13" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="210" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-14" value="명령어 반환" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-8" target="GVEklmTAcbrlkiGCALrd-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-16" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="290" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-17" value="에러 반환" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="330" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-18" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-8" target="GVEklmTAcbrlkiGCALrd-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-20" value="구분자로 묶는다" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="118" y="290" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-20" target="GVEklmTAcbrlkiGCALrd-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-22" value="구분자로 묶는다" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="330" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-22" target="GVEklmTAcbrlkiGCALrd-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GVEklmTAcbrlkiGCALrd-24" target="GVEklmTAcbrlkiGCALrd-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-24" value="CommandCore.Decode(CommandCore core, string rawData)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="370" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-25" value="구분자를 기반으로 명령어의&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="152.5" y="680" width="225" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GVEklmTAcbrlkiGCALrd-26" value="Dictionary&amp;lt;int, List&amp;lt;int&amp;gt;&amp;gt; commandPosRaw" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.08333333333333333;" vertex="1" parent="1">
+          <mxGeometry x="130" y="600" width="270" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
